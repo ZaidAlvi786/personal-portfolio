@@ -795,7 +795,7 @@ function Header() {
                         className: "flex gap-[50px] w-[90%]",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                className: "flex flex-col gap-8 pl-5 ",
+                                className: "flex flex-col justify-end gap-8 pl-5 ",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
                                         className: "w-[40px] h-[40px] flex justify-center items-center group",
@@ -941,83 +941,188 @@ function Header() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                            className: "flex flex-col gap-[50px]",
+                                            className: `flex flex-col gap-[10px] overflow-x-hidden ${isBoxComplete ? "pt-[30px]" : ""}`,
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__["motion"].div, {
-                                                    className: "w-full h-[90px] bg-white",
-                                                    initial: {
-                                                        x: '-100%'
-                                                    },
-                                                    animate: {
-                                                        x: '200%'
-                                                    },
-                                                    transition: {
-                                                        duration: 10.5,
-                                                        ease: 'easeOut'
-                                                    },
-                                                    // Set the state to true once the animation is complete
-                                                    onAnimationComplete: ()=>setIsBoxComplete(true)
-                                                }, void 0, false, {
+                                                !isBoxComplete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                                    className: "felx flex-col gap-[10px]",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__["motion"].div, {
+                                                            className: "w-full h-[90px] bg-white",
+                                                            initial: {
+                                                                x: "-50%"
+                                                            },
+                                                            animate: {
+                                                                x: [
+                                                                    "-50%",
+                                                                    "0%",
+                                                                    "100%"
+                                                                ]
+                                                            },
+                                                            transition: {
+                                                                duration: 3,
+                                                                ease: "easeOut",
+                                                                times: [
+                                                                    0.5,
+                                                                    0.5,
+                                                                    1
+                                                                ]
+                                                            },
+                                                            onAnimationComplete: ()=>setIsBoxComplete(true)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Header.tsx",
+                                                            lineNumber: 109,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__["motion"].div, {
+                                                            className: "w-[90%] h-[90px] bg-white",
+                                                            initial: {
+                                                                x: "-50%"
+                                                            },
+                                                            animate: {
+                                                                x: [
+                                                                    "-50%",
+                                                                    "0%",
+                                                                    "120%"
+                                                                ]
+                                                            },
+                                                            transition: {
+                                                                duration: 3,
+                                                                ease: "easeOut",
+                                                                times: [
+                                                                    0.5,
+                                                                    0.5,
+                                                                    1
+                                                                ]
+                                                            },
+                                                            onAnimationComplete: ()=>setIsBoxComplete(true)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Header.tsx",
+                                                            lineNumber: 123,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/components/Header.tsx",
-                                                    lineNumber: 103,
-                                                    columnNumber: 15
+                                                    lineNumber: 108,
+                                                    columnNumber: 19
                                                 }, this),
                                                 isBoxComplete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__["motion"].h1, {
-                                                    className: "text-custom-gray text-[7.2rem] font-custom-font mt-[100px]" // Adjust mt to place below box
+                                                    className: "text-custom-gray ml-7 leading-[85px] text-[6rem] font-custom-font" // Adjust mt to place below box
                                                     ,
                                                     initial: {
-                                                        y: '100%'
+                                                        y: "100%"
                                                     },
                                                     animate: {
                                                         y: 0
                                                     },
                                                     transition: {
                                                         duration: 1,
-                                                        ease: 'easeOut'
+                                                        ease: "easeOut"
                                                     },
                                                     children: "creative designer"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Header.tsx",
-                                                    lineNumber: 114,
-                                                    columnNumber: 9
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__["motion"].div, {
-                                                    className: "w-full h-[90px] bg-white",
-                                                    initial: {
-                                                        x: '-100%'
-                                                    },
-                                                    animate: {
-                                                        x: '200%'
-                                                    },
-                                                    transition: {
-                                                        duration: 1.5,
-                                                        ease: 'easeOut'
-                                                    },
-                                                    // Set the state to true once the animation is complete
-                                                    onAnimationComplete: ()=>setIsBoxComplete(true)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/Header.tsx",
-                                                    lineNumber: 123,
-                                                    columnNumber: 7
+                                                    lineNumber: 141,
+                                                    columnNumber: 19
                                                 }, this),
                                                 isBoxComplete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__["motion"].h1, {
-                                                    className: "text-custom-gray text-[7.2rem] font-custom-font mt-[100px]" // Adjust mt to place below box
+                                                    className: "text-custom-gray ml-7 leading-[85px] text-[6rem] font-custom-font" // Adjust mt to place below box
                                                     ,
                                                     initial: {
-                                                        y: '100%'
+                                                        y: "100%"
                                                     },
                                                     animate: {
                                                         y: 0
                                                     },
                                                     transition: {
                                                         duration: 1,
-                                                        ease: 'easeOut'
+                                                        ease: "easeOut"
                                                     },
                                                     children: "& developer."
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Header.tsx",
-                                                    lineNumber: 134,
-                                                    columnNumber: 9
+                                                    lineNumber: 161,
+                                                    columnNumber: 19
+                                                }, this),
+                                                isBoxComplete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__["motion"].div, {
+                                                    className: "text-custom-gray ml-7 mt-12 text-3xl font-custom-font" // Adjust mt to place below box
+                                                    ,
+                                                    initial: {
+                                                        y: "100%"
+                                                    },
+                                                    animate: {
+                                                        y: 0
+                                                    },
+                                                    transition: {
+                                                        duration: 1.5,
+                                                        ease: "easeOut"
+                                                    },
+                                                    children: "Hi I'm Zaid Nawaz, a passionate Software Developer & UI/UX Designer based in the Pakistan."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Header.tsx",
+                                                    lineNumber: 171,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__["motion"].div, {
+                                                    className: "relative w-[210px] mt-8 ml-5 cursor-pointer group h-12 overflow-hidden flex pl-3 items-center",
+                                                    initial: "initial",
+                                                    whileHover: "hover",
+                                                    variants: {},
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$framer$2d$motion__$5b$external$5d$__$28$framer$2d$motion$2c$__esm_import$29$__["motion"].div, {
+                                                            className: "absolute left-0 top-0 h-full bg-custom-gray rounded-full z-0",
+                                                            variants: {
+                                                                initial: {
+                                                                    width: 50
+                                                                },
+                                                                hover: {
+                                                                    width: "100%"
+                                                                }
+                                                            },
+                                                            transition: {
+                                                                duration: 0.5,
+                                                                ease: "easeInOut"
+                                                            }
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Header.tsx",
+                                                            lineNumber: 188,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                                            className: "relative z-10 text-white flex items-center space-x-3 w-full pl-3",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                                    children: "view all works"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/Header.tsx",
+                                                                    lineNumber: 199,
+                                                                    columnNumber: 21
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                                    className: "bg-white w-12 h-[1px]"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/Header.tsx",
+                                                                    lineNumber: 200,
+                                                                    columnNumber: 21
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                                    className: "absolute right-7 bg-white w-2 h-[1px] origin-right rotate-[35deg]"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/Header.tsx",
+                                                                    lineNumber: 201,
+                                                                    columnNumber: 21
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/components/Header.tsx",
+                                                            lineNumber: 198,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/Header.tsx",
+                                                    lineNumber: 181,
+                                                    columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
@@ -1052,7 +1157,7 @@ function Header() {
                 className: "bg-custom-gray w-2/12"
             }, void 0, false, {
                 fileName: "[project]/components/Header.tsx",
-                lineNumber: 155,
+                lineNumber: 217,
                 columnNumber: 7
             }, this)
         ]
