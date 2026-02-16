@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { finishLoading } from "@/store/loaderSlice";
