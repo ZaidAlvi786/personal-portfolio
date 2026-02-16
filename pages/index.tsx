@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
+import LandingPage from "@/components/LandingPage";
 
 export default function Home() {
   const isLoading = useSelector((state: RootState) => state.loader.isLoading);
@@ -20,18 +21,24 @@ export default function Home() {
       {isLoading ? (
         <Loader />
       ) : (
-        <motion.div className="bg-custom-gray"
+        <div className="flex flex-col gap-32">
+        <div className="h-screen ">
+        <motion.div className=""
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
           <Header />
+        
           <main>
             <Hero />
             <Projects />
             <Contact />
           </main>
         </motion.div>
+        </div>
+        <LandingPage />
+        </div>
       )}
     </div>
   );
