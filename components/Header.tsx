@@ -33,16 +33,16 @@ export default function Header() {
               <span className="w-15 h-15">
                 <Image width={100} height={100} src={Logo} alt="" />
               </span>
-              <div className="flex items-center absolute right-[35px] top-0">
+              <div className="flex items-center absolute right-[50px] top-0">
                 <span
-                  className={`text-steel-gray text-[8px] font-circular ${
+                  className={`text-steel-gray tracking-[0.3em] text-[10px] font-medium font-circular ${
                     isHovered ? "hidden" : "block"
                   }`}
                 >
                   Menu
                 </span>
                 <span
-                  className={`text-steel-gray text-[8px] font-circular ${
+                  className={`text-steel-gray tracking-[0.3em] text-[10px] font-medium font-circular ${
                     isHovered ? "block" : "hidden"
                   }`}
                 >
@@ -207,7 +207,20 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="bg-custom-gray w-2/12"></div>
+          <div className="bg-custom-gray w-2/12 py-8 flex items-end justify-center ">
+          
+                <motion.div
+                    onClick={() => window.scrollBy({ top: 400, behavior: "smooth" })}
+                    whileHover={{ y: 10 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
+                    className="relative mt-2 z-10 text-white flex flex-col items-center justify-center cursor-pointer"
+                >
+                  <span className="bottom-[100px] relative w-fit text-nowrap rotate-[90deg]">SCROLL DOWN</span>
+                    <span className="bg-white w-16 h-[1px] rotate-[90deg]"></span>
+                    <span className="absolute left-[43.4%] -bottom-[32px] bg-white w-2 h-[1px] origin-right rotate-[125deg]"></span>
+                    
+                </motion.div>
+            </div>
         </div>
       ) : (
         <NavMenu toggleMenu={toggleMenu} menuOpen={menuOpen }/>
