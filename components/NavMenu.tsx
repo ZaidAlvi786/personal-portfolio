@@ -12,6 +12,15 @@ const NavMenu = ({ toggleMenu,menuOpen }:NavMenuProps) => {
   const [animate, setAnimate] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false);
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const [isClosing, setIsClosing] = useState(false);
+
+  const handleClose = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      toggleMenu();
+      setIsClosing(false);
+    }, 2900); // Duration matches the closing animation timeline
+  };
 
   // Handle hover effects for menu icon
   
@@ -41,16 +50,16 @@ const NavMenu = ({ toggleMenu,menuOpen }:NavMenuProps) => {
       <motion.div
         className="fixed top-0 left-0 w-full h-full bg-custom-gray z-50"
         initial={{ opacity: 0 }}
-        animate={{ opacity: menuOpen ? 1 : 0 }}
-        transition={{ duration: 0.5 }}
+        animate={{ opacity: menuOpen && !isClosing ? 1 : 0 }}
+        transition={{ duration: 0.5, delay: isClosing ? 2.4 : 0 }}
       >
         {/* Animated steel-gray divs */}
         <motion.div
           className="absolute left-0 top-0 h-1/3"
           style={{ zIndex: 10 }}
           initial={{ width: '83.333%' }}
-          animate={{ width: (animate || hasAnimated) ? '100%' : '83.333%' }}
-          transition={{ duration: 1, ease: 'easeInOut', delay: 0 }}
+          animate={{ width: (animate || hasAnimated) && !isClosing ? '100%' : '83.333%' }}
+          transition={{ duration: 1, ease: 'easeInOut', delay: isClosing ? 1.4 : 0 }}
         >
           <div className="w-full h-full bg-steel-gray" />
         </motion.div>
@@ -58,8 +67,8 @@ const NavMenu = ({ toggleMenu,menuOpen }:NavMenuProps) => {
           className="absolute left-0 top-1/3 h-1/3"
           style={{ zIndex: 9 }}
           initial={{ width: '83.333%' }}
-          animate={{ width: (animate || hasAnimated) ? '100%' : '83.333%' }}
-          transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
+          animate={{ width: (animate || hasAnimated) && !isClosing ? '100%' : '83.333%' }}
+          transition={{ duration: 1, ease: 'easeInOut', delay: isClosing ? 1.2 : 0.2 }}
         >
           <div className="w-full h-full bg-steel-gray" />
         </motion.div>
@@ -67,8 +76,8 @@ const NavMenu = ({ toggleMenu,menuOpen }:NavMenuProps) => {
           className="absolute left-0 top-2/3 h-1/3"
           style={{ zIndex: 8 }}
           initial={{ width: '83.333%' }}
-          animate={{ width: (animate || hasAnimated) ? '100%' : '83.333%' }}
-          transition={{ duration: 1, ease: 'easeInOut', delay: 0.4 }}
+          animate={{ width: (animate || hasAnimated) && !isClosing ? '100%' : '83.333%' }}
+          transition={{ duration: 1, ease: 'easeInOut', delay: isClosing ? 1.0 : 0.4 }}
         >
           <div className="w-full h-full bg-steel-gray" />
         </motion.div>
@@ -76,15 +85,15 @@ const NavMenu = ({ toggleMenu,menuOpen }:NavMenuProps) => {
         <span className="w-15 h-15">
         <Image width={100} height={100} src={Logo} alt="Logo" />
       </span>
-      <div className="flex items-center">
+      <div className="flex items-center z-[100]" onClick={handleClose} >
         <span
-          className={`text-steel-gray text-[8px] font-circular block `}
+          className={`text-custom-gray cursor-pointer text-[10px] font-circular block `}
         >
           Close
         </span>
         <span
           className="w-[60px] h-[60px] flex justify-center items-center cursor-pointer"
-          onClick={toggleMenu}
+          
           
         >
           <CloseIcon fillColor="#928dab" width="30px" height="30px" />
@@ -93,10 +102,10 @@ const NavMenu = ({ toggleMenu,menuOpen }:NavMenuProps) => {
         </div>
         {/* Nav menu items */}
         <motion.div
-          className="absolute justify-center gap-8 h-full z-[1000000] left-0 w-full flex flex-col items-center space-y-4 -translate-y-1/2"
+          className="absolute justify-center gap-8 h-full z-[10000] left-[25%] w-2/4 flex flex-col items-center space-y-4 -translate-y-1/2"
           initial={{ y: "100%" }}
-          animate={{ y: (animate || hasAnimated) ? 0 : "100%" }}
-          transition={{ duration: 1, ease: "easeInOut", delay: 1.4 }}
+          animate={{ y: (animate || hasAnimated) && !isClosing ? 0 : "100%" }}
+          transition={{ duration: 1, ease: "easeInOut", delay: isClosing ? 0 : 1.4 }}
         >
           <div 
             className="text-custom-gray text-5xl font-semibold h-20 relative w-fit overflow-y-visible overflow-x-hidden"
