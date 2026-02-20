@@ -2459,19 +2459,7 @@ const ProjectItem = ({ title, subtitle, description, imageSrc, number, isReverse
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                initial: {
-                                    y: "20px",
-                                    opacity: 0
-                                },
-                                animate: {
-                                    y: 0,
-                                    opacity: 1
-                                },
-                                transition: {
-                                    duration: 1,
-                                    ease: "easeOut",
-                                    delay: 0.5
-                                },
+                                initial: "initial",
                                 className: `relative w-[210px] mt-8 ${isReversed ? 'mr-5' : 'ml-5'} cursor-pointer group h-12 overflow-hidden flex pl-3 items-center`,
                                 whileHover: "hover",
                                 children: [
@@ -2491,7 +2479,7 @@ const ProjectItem = ({ title, subtitle, description, imageSrc, number, isReverse
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/components/ProjectItem.tsx",
-                                        lineNumber: 122,
+                                        lineNumber: 121,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2501,41 +2489,41 @@ const ProjectItem = ({ title, subtitle, description, imageSrc, number, isReverse
                                                 className: "absolute left-14 bg-white w-2 h-[1px] origin-left rotate-[-35deg]"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ProjectItem.tsx",
-                                                lineNumber: 132,
+                                                lineNumber: 131,
                                                 columnNumber: 32
                                             }, this),
                                             isReversed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "bg-white w-12 h-[1px] mr-3"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ProjectItem.tsx",
-                                                lineNumber: 133,
+                                                lineNumber: 132,
                                                 columnNumber: 32
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: "view work"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ProjectItem.tsx",
-                                                lineNumber: 134,
+                                                lineNumber: 133,
                                                 columnNumber: 17
                                             }, this),
                                             !isReversed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "bg-white w-12 h-[1px]"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ProjectItem.tsx",
-                                                lineNumber: 135,
+                                                lineNumber: 134,
                                                 columnNumber: 33
                                             }, this),
                                             !isReversed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "absolute right-14 bg-white w-2 h-[1px] origin-right rotate-[35deg]"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ProjectItem.tsx",
-                                                lineNumber: 136,
+                                                lineNumber: 135,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/ProjectItem.tsx",
-                                        lineNumber: 131,
+                                        lineNumber: 130,
                                         columnNumber: 15
                                     }, this)
                                 ]
