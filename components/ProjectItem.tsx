@@ -113,9 +113,8 @@ export const ProjectItem = ({
             </div>
 
             <motion.div
-              initial={{ y: "20px", opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+              initial="initial"
+            
               className={`relative w-[210px] mt-8 ${isReversed ? 'mr-5' : 'ml-5'} cursor-pointer group h-12 overflow-hidden flex pl-3 items-center`}
               whileHover="hover"
             >

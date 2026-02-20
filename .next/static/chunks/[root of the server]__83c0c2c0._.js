@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/[root of the server]__fe939588._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/[root of the server]__83c0c2c0._.js", {
 
 "[turbopack]/browser/dev/hmr-client/hmr-client.ts [client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -541,21 +541,21 @@ function Loader() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "fixed inset-0 font-sans flex flex-col items-center justify-center bg-custom-gray text-white",
         children: [
-            progress >= 100 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].h1, {
-                className: "text-3xl font-bold text-steel-gray my-4",
+            progress >= 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].h1, {
+                className: "text-3xl font-bold text-steel-gray my-4 mix-blend-difference z-50",
                 initial: {
                     opacity: 0,
-                    scale: 1.5
+                    y: 20
                 },
                 animate: {
                     opacity: 1,
-                    scale: 1
+                    y: 0
                 },
                 transition: {
-                    duration: 1,
-                    ease: "easeInOut"
+                    duration: 0.8,
+                    ease: "easeOut"
                 },
-                children: "Zaid Nawaz"
+                children: "ZAID NAWAZ"
             }, void 0, false, {
                 fileName: "[project]/components/Loader.tsx",
                 lineNumber: 28,
@@ -684,7 +684,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/public/assets/DribbleIcon.tsx [client] (ecmascript)": ((__turbopack_context__) => {
+"[project]/public/GlobeIcon.tsx [client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
@@ -694,39 +694,54 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 ;
-const DribbleIcon = ({ fillColor = '#928dab', width = '800px', height = '800px', className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-        fill: fillColor,
+const GlobeIcon = ({ fillColor = '#928dab', width = '24px', height = '24px', className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        fill: "none",
+        stroke: fillColor,
+        strokeWidth: "2",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
         width: width,
         height: height,
         className: className,
-        viewBox: "0 0 32 32",
-        version: "1.1",
+        viewBox: "0 0 24 24",
         xmlns: "http://www.w3.org/2000/svg",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("title", {
-                children: "dribble"
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                cx: "12",
+                cy: "12",
+                r: "10"
             }, void 0, false, {
-                fileName: "[project]/public/assets/DribbleIcon.tsx",
-                lineNumber: 20,
+                fileName: "[project]/public/GlobeIcon.tsx",
+                lineNumber: 23,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
+                x1: "2",
+                y1: "12",
+                x2: "22",
+                y2: "12"
+            }, void 0, false, {
+                fileName: "[project]/public/GlobeIcon.tsx",
+                lineNumber: 24,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                d: "M25.916 7.921c-1.881 2.234-4.289 3.965-7.035 5.009l-0.118 0.039c0.3 0.612 0.587 1.231 0.85 1.857 0.1 0.225 0.187 0.45 0.275 0.662 0.927-0.102 2.003-0.16 3.092-0.16 2.063 0 4.077 0.208 6.023 0.605l-0.193-0.033c-0.020-3.040-1.107-5.821-2.904-7.994l0.017 0.021zM13.001 3.569c1.595 2.15 3.176 4.6 4.598 7.151l0.178 0.347c2.712-0.908 4.989-2.511 6.694-4.6l0.021-0.026c-2.247-2.006-5.228-3.232-8.494-3.232-1.063 0-2.096 0.13-3.084 0.375l0.088-0.018zM3.46 13.395c4.219-0.022 8.295-0.59 12.176-1.636l-0.333 0.076c-1.652-2.899-3.222-5.318-4.912-7.644l0.163 0.236c-3.596 1.721-6.227 4.966-7.077 8.875l-0.015 0.085zM6.484 24.585c2.42-3.882 6.010-6.839 10.271-8.408l0.141-0.045c0.169-0.056 0.337-0.105 0.506-0.15-0.325-0.731-0.675-1.458-1.040-2.174-3.888 1.154-8.355 1.819-12.977 1.819-0.066 0-0.131-0-0.196-0l0.010 0-0.005 0.39c0 0.003 0 0.006 0 0.009 0 3.297 1.25 6.302 3.301 8.568l-0.010-0.011zM21.005 27.809c-0.682-3.699-1.63-6.957-2.863-10.070l0.126 0.361-0.082 0.025c-4.314 1.346-7.826 4.192-10.002 7.915l-0.045 0.083c2.145 1.688 4.885 2.707 7.863 2.707 1.805 0 3.522-0.374 5.078-1.049l-0.083 0.032zM28.646 18.052c-1.571-0.474-3.376-0.747-5.245-0.747-0.964 0-1.911 0.073-2.836 0.213l0.104-0.013c0.98 2.564 1.842 5.629 2.436 8.789l0.054 0.344c2.874-1.96 4.893-4.993 5.482-8.51l0.010-0.075zM16 30.996c0 0 0 0-0 0-8.282 0-14.996-6.714-14.996-14.996s6.714-14.996 14.996-14.996c8.282 0 14.996 6.714 14.996 14.996 0 0 0 0 0 0v0c-0.011 8.277-6.718 14.984-14.995 14.996h-0.001z"
+                d: "M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
             }, void 0, false, {
-                fileName: "[project]/public/assets/DribbleIcon.tsx",
-                lineNumber: 21,
+                fileName: "[project]/public/GlobeIcon.tsx",
+                lineNumber: 25,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/public/assets/DribbleIcon.tsx",
+        fileName: "[project]/public/GlobeIcon.tsx",
         lineNumber: 11,
         columnNumber: 3
     }, this);
-_c = DribbleIcon;
-const __TURBOPACK__default__export__ = DribbleIcon;
+_c = GlobeIcon;
+const __TURBOPACK__default__export__ = GlobeIcon;
 var _c;
-__turbopack_context__.k.register(_c, "DribbleIcon");
+__turbopack_context__.k.register(_c, "GlobeIcon");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
@@ -807,7 +822,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/public/assets/Linkdien.tsx [client] (ecmascript)": ((__turbopack_context__) => {
+"[project]/public/CodePenIcon.tsx [client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
@@ -817,30 +832,29 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 ;
-const LinkdienIcon = ({ fillColor = '#000000', width = '800px', height = '800px', className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+const CodePenIcon = ({ fillColor = '#928dab', width = '24px', height = '24px', className })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         fill: fillColor,
         width: width,
         height: height,
         className: className,
         viewBox: "0 0 24 24",
         xmlns: "http://www.w3.org/2000/svg",
-        "data-name": "Layer 1",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-            d: "M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"
+            d: "M22 8.5L12 2 2 8.5v7L12 22l10-6.5v-7zm-10 9.5l-6-3.9v-5.2l6 3.9v5.2zm0-11l6 3.9-6 3.9-6-3.9 6-3.9zm6 7.1v5.2l-6 3.9v-5.2l6-3.9zM4.1 8.6l6-3.9v5.2l-6 3.9V8.6zm15.8 5.2l-6-3.9v-5.2l6 3.9v5.2z"
         }, void 0, false, {
-            fileName: "[project]/public/assets/Linkdien.tsx",
-            lineNumber: 20,
+            fileName: "[project]/public/CodePenIcon.tsx",
+            lineNumber: 19,
             columnNumber: 5
         }, this)
     }, void 0, false, {
-        fileName: "[project]/public/assets/Linkdien.tsx",
+        fileName: "[project]/public/CodePenIcon.tsx",
         lineNumber: 11,
         columnNumber: 3
     }, this);
-_c = LinkdienIcon;
-const __TURBOPACK__default__export__ = LinkdienIcon;
+_c = CodePenIcon;
+const __TURBOPACK__default__export__ = CodePenIcon;
 var _c;
-__turbopack_context__.k.register(_c, "LinkdienIcon");
+__turbopack_context__.k.register(_c, "CodePenIcon");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
@@ -1614,10 +1628,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$logo$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$logo$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/logo.png.mjs { IMAGE => "[project]/public/logo.png (static in ecmascript)" } [client] (structured image object, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$nav$2d$menu$2d$icon$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$nav$2d$menu$2d$icon$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/public/nav-menu-icon.svg.mjs { IMAGE => "[project]/public/nav-menu-icon.svg (static in ecmascript)" } [client] (structured image object, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/index.js [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$assets$2f$DribbleIcon$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/public/assets/DribbleIcon.tsx [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$GlobeIcon$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/public/GlobeIcon.tsx [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$BehanceIcon$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/public/BehanceIcon.tsx [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$GithubIcon$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/public/GithubIcon.tsx [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$assets$2f$Linkdien$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/public/assets/Linkdien.tsx [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$CodePenIcon$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/public/CodePenIcon.tsx [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$DotBox$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/public/DotBox.tsx [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$NavMenu$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/NavMenu.tsx [client] (ecmascript)");
@@ -1733,8 +1747,8 @@ function Header() {
                                             className: "w-[40px] h-[40px] flex justify-center items-center group",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "w-[35px] h-[35px] flex justify-center items-center group-hover:bg-custom-gray rounded-full",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$public$2f$assets$2f$DribbleIcon$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    className: "group-hover:fill-steel-gray fill-custom-gray",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$public$2f$GlobeIcon$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    className: "group-hover:stroke-steel-gray stroke-custom-gray",
                                                     width: "20px",
                                                     height: "20px",
                                                     fillColor: "transparent"
@@ -1803,7 +1817,7 @@ function Header() {
                                             className: "w-[40px] h-[40px] flex justify-center items-center group",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "w-[35px] h-[35px] flex justify-center items-center group-hover:bg-custom-gray rounded-full",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$public$2f$assets$2f$Linkdien$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$public$2f$CodePenIcon$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                                                     className: "group-hover:fill-steel-gray fill-custom-gray",
                                                     width: "20px",
                                                     height: "20px"
@@ -2201,676 +2215,15 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/components/ProjectItem.tsx [client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
+"[project]/components/LandingPage.tsx [client] (ecmascript)": (function(__turbopack_context__) {
 
-var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { g: global, __dirname, k: __turbopack_refresh__, m: module, e: exports } = __turbopack_context__;
 {
-__turbopack_context__.s({
-    "ProjectItem": (()=>ProjectItem)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$in$2d$view$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/use-in-view.mjs [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/index.js [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature();
-;
-;
-;
-const ProjectItem = ({ title, subtitle, description, imageSrc, number, isReversed = false })=>{
-    _s();
-    const [isComplete, setIsComplete] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const isInView = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$in$2d$view$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["useInView"])(ref, {
-        once: true
-    });
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        ref: ref,
-        className: "relative mt-40",
-        children: [
-            !isComplete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `flex gap-[100px] items-start transition-opacity duration-500 ${isReversed ? 'flex-row-reverse text-right' : ''}`,
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative h-[400px] w-[350px] overflow-hidden",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            className: "w-full h-full bg-steel-gray absolute",
-                            initial: {
-                                width: "3px"
-                            },
-                            animate: isInView ? {
-                                width: [
-                                    "3px",
-                                    "100%",
-                                    "100%",
-                                    "100%",
-                                    "100%"
-                                ],
-                                x: [
-                                    "0%",
-                                    "0%",
-                                    "0%",
-                                    "97%",
-                                    "100%"
-                                ]
-                            } : {},
-                            transition: {
-                                duration: 2,
-                                ease: "easeOut",
-                                times: [
-                                    0,
-                                    0.5,
-                                    0.7,
-                                    0.8,
-                                    1
-                                ]
-                            },
-                            onAnimationComplete: ()=>setIsComplete(true)
-                        }, void 0, false, {
-                            fileName: "[project]/components/ProjectItem.tsx",
-                            lineNumber: 27,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/components/ProjectItem.tsx",
-                        lineNumber: 26,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative h-[200px] flex-1 overflow-hidden",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            className: `w-1/4 h-[90px] bg-steel-gray absolute ${isReversed ? 'right-0' : 'left-0'}`,
-                            initial: {
-                                width: "3px"
-                            },
-                            animate: isInView ? {
-                                width: [
-                                    "3px",
-                                    "100%",
-                                    "100%",
-                                    "100%",
-                                    "100%"
-                                ],
-                                x: [
-                                    "0%",
-                                    "0%",
-                                    "0%",
-                                    isReversed ? "-97%" : "97%",
-                                    isReversed ? "-100%" : "100%"
-                                ]
-                            } : {},
-                            transition: {
-                                duration: 2,
-                                ease: "easeOut",
-                                times: [
-                                    0,
-                                    0.5,
-                                    0.7,
-                                    0.8,
-                                    1
-                                ]
-                            }
-                        }, void 0, false, {
-                            fileName: "[project]/components/ProjectItem.tsx",
-                            lineNumber: 44,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/components/ProjectItem.tsx",
-                        lineNumber: 43,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/ProjectItem.tsx",
-                lineNumber: 24,
-                columnNumber: 9
-            }, this),
-            isComplete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                initial: {
-                    opacity: 0
-                },
-                animate: {
-                    opacity: 1
-                },
-                transition: {
-                    duration: 0.8
-                },
-                className: `flex gap-[100px] group grayscale transition-all duration-700 hover:grayscale-0 ${isReversed ? 'flex-row-reverse' : ''}`,
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative h-[400px] w-[350px] ",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-full h-full object-cover",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                                    src: imageSrc,
-                                    alt: title,
-                                    width: 350,
-                                    height: 400,
-                                    className: "object-cover rounded-lg shadow-xl"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/ProjectItem.tsx",
-                                    lineNumber: 71,
-                                    columnNumber: 15
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/components/ProjectItem.tsx",
-                                lineNumber: 70,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: `text-[10rem] text-white font-bold [text-shadow:_0_5px_10px_rgba(0,0,0,0.3)] absolute -bottom-8 ${isReversed ? '-right-16' : '-left-16'}`,
-                                children: number
-                            }, void 0, false, {
-                                fileName: "[project]/components/ProjectItem.tsx",
-                                lineNumber: 79,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/ProjectItem.tsx",
-                        lineNumber: 69,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `flex justify-between flex-col flex-1 ${isReversed ? 'items-end text-right' : ''}`,
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex gap-4 flex-col",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "overflow-hidden",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].h1, {
-                                                initial: {
-                                                    y: "100%",
-                                                    opacity: 0
-                                                },
-                                                animate: {
-                                                    y: 0,
-                                                    opacity: 1
-                                                },
-                                                transition: {
-                                                    duration: 1,
-                                                    ease: "easeOut"
-                                                },
-                                                className: "text-white text-[6.5rem] font-custom-font [text-shadow:1px_1px_0_#000,-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000,1px_1px_0_#000] group-hover:text-black group-hover:[text-shadow:none] transition-all duration-500",
-                                                children: title
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/ProjectItem.tsx",
-                                                lineNumber: 88,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].span, {
-                                                initial: {
-                                                    y: "100%",
-                                                    opacity: 0
-                                                },
-                                                animate: {
-                                                    y: 0,
-                                                    opacity: 1
-                                                },
-                                                transition: {
-                                                    duration: 1,
-                                                    ease: "easeOut",
-                                                    delay: 0.1
-                                                },
-                                                className: "block group-hover:text-black transition-colors duration-500",
-                                                children: subtitle
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/ProjectItem.tsx",
-                                                lineNumber: 96,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/ProjectItem.tsx",
-                                        lineNumber: 87,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].span, {
-                                        initial: {
-                                            y: "20px",
-                                            opacity: 0
-                                        },
-                                        animate: {
-                                            y: 0,
-                                            opacity: 1
-                                        },
-                                        transition: {
-                                            duration: 1,
-                                            ease: "easeOut",
-                                            delay: 0.3
-                                        },
-                                        className: "group-hover:text-black transition-colors duration-500",
-                                        children: description
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/ProjectItem.tsx",
-                                        lineNumber: 105,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/ProjectItem.tsx",
-                                lineNumber: 86,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                initial: "initial",
-                                className: `relative w-[210px] mt-8 ${isReversed ? 'mr-5' : 'ml-5'} cursor-pointer group h-12 overflow-hidden flex pl-3 items-center`,
-                                whileHover: "hover",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        className: `absolute ${isReversed ? 'right-0' : 'left-0'} top-0 h-full bg-steel-gray rounded-full z-0`,
-                                        variants: {
-                                            initial: {
-                                                width: 50
-                                            },
-                                            hover: {
-                                                width: "100%"
-                                            }
-                                        },
-                                        transition: {
-                                            duration: 0.5,
-                                            ease: "easeInOut"
-                                        }
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/ProjectItem.tsx",
-                                        lineNumber: 121,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: `relative z-10 text-white flex items-center space-x-3 w-full pl-3 ${isReversed ? 'justify-end pr-3' : ''}`,
-                                        children: [
-                                            isReversed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "absolute left-14 bg-white w-2 h-[1px] origin-left rotate-[-35deg]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/ProjectItem.tsx",
-                                                lineNumber: 131,
-                                                columnNumber: 32
-                                            }, this),
-                                            isReversed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "bg-white w-12 h-[1px] mr-3"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/ProjectItem.tsx",
-                                                lineNumber: 132,
-                                                columnNumber: 32
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                children: "view work"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/ProjectItem.tsx",
-                                                lineNumber: 133,
-                                                columnNumber: 17
-                                            }, this),
-                                            !isReversed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "bg-white w-12 h-[1px]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/ProjectItem.tsx",
-                                                lineNumber: 134,
-                                                columnNumber: 33
-                                            }, this),
-                                            !isReversed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "absolute right-14 bg-white w-2 h-[1px] origin-right rotate-[35deg]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/ProjectItem.tsx",
-                                                lineNumber: 135,
-                                                columnNumber: 33
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/ProjectItem.tsx",
-                                        lineNumber: 130,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/ProjectItem.tsx",
-                                lineNumber: 115,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/ProjectItem.tsx",
-                        lineNumber: 85,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/ProjectItem.tsx",
-                lineNumber: 62,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/ProjectItem.tsx",
-        lineNumber: 22,
-        columnNumber: 5
-    }, this);
-};
-_s(ProjectItem, "Sdh0W2NXl6k3reGA31zC0CpuulQ=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$in$2d$view$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["useInView"]
-    ];
-});
-_c = ProjectItem;
-var _c;
-__turbopack_context__.k.register(_c, "ProjectItem");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
-"[project]/constants/projects.ts [client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
+const e = new Error(`Could not parse module '[project]/components/LandingPage.tsx'
 
-var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "projects": (()=>projects)
-});
-const projects = [
-    {
-        title: "Resumify AI",
-        subtitle: "Full Stack Web Application",
-        description: "Resumify AI is a web application that uses AI to generate a resume for the user.",
-        imageSrc: "/resumify-ai.png",
-        number: "01",
-        isReversed: false
-    },
-    {
-        title: "Resumify AI",
-        subtitle: "Full Stack Web Application",
-        description: "Resumify AI is a web application that uses AI to generate a resume for the user.",
-        imageSrc: "/resumify-ai.png",
-        number: "02",
-        isReversed: true
-    },
-    {
-        title: "Resumify AI",
-        subtitle: "Full Stack Web Application",
-        description: "Resumify AI is a web application that uses AI to generate a resume for the user.",
-        imageSrc: "/resumify-ai.png",
-        number: "03",
-        isReversed: false
-    },
-    {
-        title: "Resumify AI",
-        subtitle: "Full Stack Web Application",
-        description: "Resumify AI is a web application that uses AI to generate a resume for the user.",
-        imageSrc: "/resumify-ai.png",
-        number: "04",
-        isReversed: true
-    }
-];
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
-"[project]/components/LandingPage.tsx [client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>Hero)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$in$2d$view$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/use-in-view.mjs [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/index.js [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ProjectItem$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ProjectItem.tsx [client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$constants$2f$projects$2e$ts__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/constants/projects.ts [client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature();
-;
-;
-;
-;
-function Hero() {
-    _s();
-    const [isBoxComplete, setIsBoxComplete] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const isInView = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$in$2d$view$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["useInView"])(ref, {
-        once: true
-    });
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        ref: ref,
-        className: "bg-custom-gray relative flex flex-col gap-12 px-40 py-20",
-        children: [
-            !isBoxComplete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex w-1/4 flex-col gap-[10px] relative overflow-hidden h-[200px]",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                    className: "w-1/4 h-[90px] bg-steel-gray absolute",
-                    initial: {
-                        width: "3px"
-                    },
-                    animate: isInView ? {
-                        width: [
-                            "3px",
-                            "100%",
-                            "100%",
-                            "100%",
-                            "100%"
-                        ],
-                        x: [
-                            "0%",
-                            "0%",
-                            "0%",
-                            "97%",
-                            "100%"
-                        ]
-                    } : {},
-                    transition: {
-                        duration: 5,
-                        ease: "easeOut",
-                        times: [
-                            0,
-                            0.5,
-                            0.7,
-                            0.8,
-                            1
-                        ]
-                    },
-                    onAnimationComplete: ()=>setIsBoxComplete(true)
-                }, void 0, false, {
-                    fileName: "[project]/components/LandingPage.tsx",
-                    lineNumber: 15,
-                    columnNumber: 11
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/components/LandingPage.tsx",
-                lineNumber: 14,
-                columnNumber: 9
-            }, this),
-            isBoxComplete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative flex flex-col gap-8",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                        className: "text-steel-gray font-custom-font font-bold text-7xl",
-                        initial: {
-                            y: "100%",
-                            opacity: 0
-                        },
-                        animate: isInView ? {
-                            y: 0,
-                            opacity: 1
-                        } : {},
-                        transition: {
-                            duration: 1,
-                            ease: "easeOut"
-                        },
-                        children: "Creafted with love."
-                    }, void 0, false, {
-                        fileName: "[project]/components/LandingPage.tsx",
-                        lineNumber: 32,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                        className: "text-steel-gray font-custom-font font-regular leading-10 text-3xl",
-                        initial: {
-                            y: "100%",
-                            opacity: 0
-                        },
-                        animate: isInView ? {
-                            y: 0,
-                            opacity: 1
-                        } : {},
-                        transition: {
-                            duration: 1,
-                            ease: "easeOut",
-                            delay: 0.2
-                        },
-                        children: "These are a selection of my recent works."
-                    }, void 0, false, {
-                        fileName: "[project]/components/LandingPage.tsx",
-                        lineNumber: 38,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/LandingPage.tsx",
-                lineNumber: 31,
-                columnNumber: 9
-            }, this),
-            __TURBOPACK__imported__module__$5b$project$5d2f$constants$2f$projects$2e$ts__$5b$client$5d$__$28$ecmascript$29$__["projects"].map((project, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ProjectItem$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__["ProjectItem"], {
-                    ...project
-                }, index, false, {
-                    fileName: "[project]/components/LandingPage.tsx",
-                    lineNumber: 49,
-                    columnNumber: 9
-                }, this)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "pt-[100px] mb-20",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "tracking-[3px] text-[1.1rem] uppercase text-[#717171] font-custom-font",
-                        children: "THERE'S MORE"
-                    }, void 0, false, {
-                        fileName: "[project]/components/LandingPage.tsx",
-                        lineNumber: 52,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative group flex items-center gap-6 cursor-pointer transition-transform duration-500 hover:translate-x-4 w-fit mt-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-white font-custom-font text-6xl",
-                                children: "view all projects"
-                            }, void 0, false, {
-                                fileName: "[project]/components/LandingPage.tsx",
-                                lineNumber: 54,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative flex items-center mt-2",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "bg-white w-16 h-[1px]"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/LandingPage.tsx",
-                                        lineNumber: 56,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "absolute right-0 bg-white w-3 h-[1px] origin-right rotate-[35deg] group-hover:opacity-0 transition-opacity duration-300"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/LandingPage.tsx",
-                                        lineNumber: 57,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/LandingPage.tsx",
-                                lineNumber: 55,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/LandingPage.tsx",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/LandingPage.tsx",
-                lineNumber: 51,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "pt-[100px] mb-20 flex flex-col gap-6",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "tracking-[3px] text-[1.1rem] uppercase text-[#717171] font-custom-font",
-                        children: "QUICK LINKS"
-                    }, void 0, false, {
-                        fileName: "[project]/components/LandingPage.tsx",
-                        lineNumber: 62,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex gap-10",
-                        children: [
-                            "about",
-                            "contact",
-                            "works",
-                            "vlog"
-                        ].map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `relative group flex flex-col items-start gap-1 ${link === 'vlog' ? 'cursor-not-allowed' : 'cursor-pointer'}`,
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: `inline-block tracking-[2px] text-4xl font-custom-font transition-all duration-500 ${link === 'vlog' ? 'text-[#3d3d3d]' : 'text-steel-gray group-hover:translate-x-[5px]'}`,
-                                        children: link
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/LandingPage.tsx",
-                                        lineNumber: 66,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: `absolute bottom-4 left-0 w-full h-[4px] transition-transform duration-500 origin-right group-hover:origin-left ${link === 'vlog' ? 'bg-[#3d3d3d] scale-x-100' : 'bg-steel-gray scale-x-0 group-hover:scale-x-100'}`
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/LandingPage.tsx",
-                                        lineNumber: 69,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, link, true, {
-                                fileName: "[project]/components/LandingPage.tsx",
-                                lineNumber: 65,
-                                columnNumber: 13
-                            }, this))
-                    }, void 0, false, {
-                        fileName: "[project]/components/LandingPage.tsx",
-                        lineNumber: 63,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/LandingPage.tsx",
-                lineNumber: 61,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/LandingPage.tsx",
-        lineNumber: 12,
-        columnNumber: 5
-    }, this);
-}
-_s(Hero, "wdudZ/4P+fsK2KPnRJ/wsO3rRwM=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$in$2d$view$2e$mjs__$5b$client$5d$__$28$ecmascript$29$__["useInView"]
-    ];
-});
-_c = Hero;
-var _c;
-__turbopack_context__.k.register(_c, "Hero");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
+Unexpected token `div`. Expected jsx identifier`);
+e.code = 'MODULE_UNPARSEABLE';
+throw e;}}),
 "[project]/pages/index.tsx [client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -3041,4 +2394,4 @@ __turbopack_context__.r("[next]/entry/page-loader.ts { PAGE => \"[project]/pages
 }}),
 }]);
 
-//# sourceMappingURL=%5Broot%20of%20the%20server%5D__fe939588._.js.map
+//# sourceMappingURL=%5Broot%20of%20the%20server%5D__83c0c2c0._.js.map
