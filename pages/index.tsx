@@ -8,6 +8,7 @@ import Hero from "@/components/Hero";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import LandingPage from "@/components/LandingPage";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const isLoading = useSelector((state: RootState) => state.loader.isLoading);
@@ -38,6 +39,7 @@ export default function Home() {
         </motion.div>
         </div>
         <LandingPage />
+        <Footer />
         </div>
       )}
     </div>
